@@ -1,0 +1,197 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff5733;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: linear-gradient(135deg, #ff8c00, #ff5733);
+    color: white;
+    margin: 8px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 1em;
+    transition: 0.3s ease-in-out;
+}
+
+#skills ul li:hover {
+    background: linear-gradient(135deg, #ff5733, #ff8c00);
+    transform: scale(1.1);
+}
+
+/* Project Cards */
+.project {
+    background: linear-gradient(to right, #f3e5f5, #e1bee7);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #d1c4e9, #b39ddb);
+}
+
+/* Contact */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #111;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #ff5733, #ff8c00);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #ff8c00, #ff5733);
+    transform: scale(1.1);
+}
